@@ -11,10 +11,13 @@ export default createGlobalStyle`
   }
 
   .name__input {
-    padding: 16px;
+    padding: 5px;
+    margin: 0.1em 0.18em;
     background-color: #f5efc9;
     outline: 0;
     border: 1px solid black;
+    font-family: "Alegreya",serif;
+    font-size: 2em;
     margin-top:10px;
   }
 
@@ -50,7 +53,6 @@ export default createGlobalStyle`
 }
 .jcPjMc::before,.btn::before {
     bottom: 0;
-    border-radius: 50% 50% 0 0;
 }
 .jcPjMc:hover::before,.btn:hover::before {
     height: 180%;
