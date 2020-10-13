@@ -8,8 +8,7 @@ export default [
     {
         id: 2,
         text:
-            "Disclaimer: The Ticket Picker app aims to support the public transport system and optimize passengers flow. We are doing this to help people new in a big city like Berlin, we do not have any monetary benefit out of this. We value your privacy and DO NOT save your responses.",
-
+            "The Ticket Picker app aims to support the public transport system users. We value your privacy and DO NOT save your responses.",
         options: [
             { text: "I understand", value: 3 },
             { text: "To the start site", value: 1 },
@@ -18,9 +17,7 @@ export default [
     {
         id: 3,
         text:
-            "There are few questions which you may not want to answer. Those questions are marked as optional, you may skip them",
-        "Your responses will be consolidated into a report which will be shown at the end of questionnaire.":
-            "To start the questionnaire, click the button below.",
+            "Your responses will be shown at the end of questionnaire. To begin, click the start button below.",
         options: [
             { text: "start", value: 4 },
             { text: "to the start site", value: 1 },
