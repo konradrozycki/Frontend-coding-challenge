@@ -43,7 +43,7 @@ const App = () => {
                             {options.map((option, i) => (
                                 <>
                                     {option.value === 5 && (
-                                        <div style={{ margin: "0px 10px" }}>
+                                        <div className="wrapper">
                                             <input
                                                 placeholder="Name..."
                                                 value={name}

@@ -10,33 +10,38 @@ export default createGlobalStyle`
     padding: 2em;
   }
 
-  .name__input {
-    padding: 5px;
-    margin: 0.1em 0.18em;
-    background-color: #f5efc9;
-    outline: 0;
-    border: 1px solid black;
-    font-family: "Alegreya",serif;
-    font-size: 2em;
-    margin-top:10px;
-  }
+.name__input {
+  padding: 5px;
+  margin: 0.1em 0.485em;
+  background: none;
+  outline: 0;
+  border: 1px solid black;
+  font-family: "Alegreya",serif;
+  font-size: 2em;
+  color: #3a3a36;
+  margin-top:10px;
+}
 
-  .btn {
-    background: none;
-    border: 1px solid #111;
-    box-shadow: none;
-    color: #111;
-    cursor: pointer;
-    font-family: 'Alegreya', serif;
-    font-size: 2em;
-    margin-top:0.5em;
-    opacity: 0.8;
-    outline: none;
-    padding: 0 1em;
-    transition: 0.8s;
-    position: relative;
-    overflow: hidden;
-  }
+.name__input:focus {
+  box-shadow:  0 0 0 2px black;
+}
+
+.btn {
+  background: none;
+  border: 1px solid #111;    
+  box-shadow: none;
+  color: #111;    
+  cursor: pointer;
+  font-family: 'Alegreya', serif;
+  font-size: 2em;
+  margin-top:0.5em;
+  opacity: 0.8;
+  outline: none;
+  padding: 0 1em;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
 
 .jcPjMc:hover,.btn:hover {
     color: #e1ddc9;

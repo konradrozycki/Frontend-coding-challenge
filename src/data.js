@@ -8,7 +8,7 @@ export default [
     {
         id: 2,
         text:
-            "The Ticket Picker app aims to support the public transport system users. We value your privacy and DO NOT save your responses.",
+            "We support users of public transport and value your privacy. We DO NOT save your responses.",
         options: [
             { text: "I understand", value: 3 },
             { text: "To the start site", value: 1 },
@@ -17,7 +17,7 @@ export default [
     {
         id: 3,
         text:
-            "Your responses will be shown at the end of questionnaire. To begin, click the start button below.",
+            "Your responses will be shown at the end of form. To begin, click the start button below.",
         options: [
             { text: "start", value: 4 },
             { text: "to the start site", value: 1 },
