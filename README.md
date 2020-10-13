@@ -1,4 +1,4 @@
-# Decision Tree
+# Coding Challenge
 
 A work-in-progress React app.
 
