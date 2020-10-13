@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import paper from '../cream-paper.png';
+import { createGlobalStyle } from "styled-components";
+import paper from "../cream-paper.png";
 
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
@@ -30,7 +30,31 @@ export default createGlobalStyle`
     opacity: 0.8;
     outline: none;
     padding: 0 1em;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
   }
+
+.jcPjMc:hover,.btn:hover {
+    color: #e1ddc9;
+}
+.jcPjMc::before,.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #111;
+    z-index: -1;
+    transition: 0.8s;
+}
+.jcPjMc::before,.btn::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.jcPjMc:hover::before,.btn:hover::before {
+    height: 180%;
+}
 
   .result__container {
     border: 1px solid black;
