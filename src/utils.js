@@ -5,7 +5,7 @@
  * @param {number} n The upper limit of the range.
  * @return {array} A range of numbers.
  */
-const range = n => [...Array(n).keys()];
+const range = (n) => [...Array(n).keys()];
 
 /**
  * Splits an array into multiple arrays of a given length.
@@ -15,8 +15,9 @@ const range = n => [...Array(n).keys()];
  * @return {array}      An array of arrays.
  */
 const chunk = (arr, len) => {
-  return range(Math.ceil(arr.length / len))
-    .map((_, i) => arr.slice(i * len, i * len + len));
+    return range(Math.ceil(arr.length / len)).map((_, i) =>
+        arr.slice(i * len, i * len + len)
+    );
 };
 
 /**
@@ -26,7 +27,6 @@ const chunk = (arr, len) => {
  * @param {number} len  OPTIONAL: the number of words for each line.
  * @return {array}      An array of lines.
  */
-export const splitText = (text, len = 5) => {
-  return chunk(text.split(' '), len)
-    .map(line => line.join(' '));
+export const splitText = (text, len = 3) => {
+    return chunk(text.split(" "), len).map((line) => line.join(" "));
 };
