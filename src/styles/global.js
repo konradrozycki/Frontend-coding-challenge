@@ -1,21 +1,46 @@
 import { createGlobalStyle } from "styled-components";
-import paper from "../cream-paper.png";
 
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
 
-  body {
-    background-color: #f5efc9;
-    background-image: url(${paper});
-    padding: 2em;
-  }
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  height: 70px;
+  background-color: #3a3a36;
+  width: 100%;
+}
+
+.header h1 {
+  margin: 0px;
+  color: #ffffff;
+  margin-left: 30px;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+}
+
+#root {
+  padding: 2em;
+}
+
+body {
+  background-color: #edf5f0;
+  margin: 0px;
+}
 
 .name__input {
   padding: 5px;
   margin: 0.1em 0.485em;
   background: none;
   outline: 0;
-  border: 1px solid black;
+  border: 1px solid #3a3a36;
   font-family: "Alegreya",serif;
   font-size: 2em;
   color: #3a3a36;
@@ -23,7 +48,7 @@ export default createGlobalStyle`
 }
 
 .name__input:focus {
-  box-shadow:  0 0 0 2px black;
+  box-shadow:  0 0 0 1px #3a3a36;
 }
 
 .btn {
@@ -44,7 +69,7 @@ export default createGlobalStyle`
 }
 
 .jcPjMc:hover,.btn:hover {
-    color: #e1ddc9;
+    color: #edf5f0;
 }
 .jcPjMc::before,.btn::before {
     content: "";
@@ -74,7 +99,7 @@ export default createGlobalStyle`
   }
 
   .result__heading, .result__name {
-    color: #111;
+    color: #3a3a36;
     font-family: 'Alegreya',serif;
     font-size: 4em;
     margin-top: 0px;

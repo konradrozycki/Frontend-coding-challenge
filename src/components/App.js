@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { splitText } from "../utils";
-import { v4 as uuidv4 } from "uuid";
 
 import GlobalStyle from "../styles/global";
 import Line from "./Line";
 import Button from "./Button";
 import data from "../data";
 
-const DELAY = 50; // delay between showing the next line
+const DELAY = 100; // delay between showing the next line
 
 const App = () => {
     const [nodeIndex, setNodeIndex] = useState(1);
@@ -138,11 +137,11 @@ const App = () => {
                                 >
                                     {" "}
                                     {data.find((n) => n.id === ans).text}
+                                    {""}
                                 </p>
                             </>
                         ))}
                     <button
-                        // key={uuidv4()}
                         className="btn"
                         onClick={() => {
                             localStorage.removeItem("name");
