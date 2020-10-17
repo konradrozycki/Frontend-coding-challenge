@@ -3,6 +3,12 @@ import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
 
+body {
+  background-color: #edf5f0;
+  margin: 0px;
+  display: block !important;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -14,7 +20,7 @@ export default createGlobalStyle`
   width: 100%;
 }
 
-.header h1 {
+.header h2 {
   margin: 0px;
   color: #ffffff;
   margin-left: 30px;
@@ -28,11 +34,6 @@ export default createGlobalStyle`
 
 #root {
   padding: 2em;
-}
-
-body {
-  background-color: #edf5f0;
-  margin: 0px;
 }
 
 .name__input {
@@ -71,42 +72,44 @@ body {
 .jcPjMc:hover,.btn:hover {
     color: #edf5f0;
 }
+
 .jcPjMc::before,.btn::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    background: #111;
-    z-index: -1;
-    transition: 0.8s;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #111;
+  z-index: -1;
+  transition: 0.8s;
 }
+
 .jcPjMc::before,.btn::before {
-    bottom: 0;
+  bottom: 0;
 }
+
 .jcPjMc:hover::before,.btn:hover::before {
-    height: 180%;
+  height: 180%;
 }
 
-  .result__container {
-    border: 1px solid black;
-    padding:20px;
-  }
-
-  .font {
-    color: #111;
-    font-family: 'Alegreya',serif;
-  }
-
-  .result__heading, .result__name {
-    color: #3a3a36;
-    font-family: 'Alegreya',serif;
-    font-size: 4em;
-    margin-top: 0px;
+.result__container {
+  border: 1px solid black;    
+  padding:20px;
 }
-  }
 
-  .result__name{
-    font-size: 2.5em;
-  }
+.font {
+  color: #111;
+  font-family: 'Alegreya',serif;
+}
+
+.result__heading, .result__name {
+  color: #3a3a36;
+  font-family: 'Alegreya',serif;
+  font-size: 4em;
+  margin-top: 0px;
+}
+
+.result__name{
+  font-size: 2.5em;
+}
 `;
