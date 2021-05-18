@@ -16,10 +16,6 @@ Open (http://localhost:3000) to view it in the browser.
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-# Assumptions
-
-I assumed that we need to only show our decision tree and I don't have to make it in for every scenario.
-
 # Design decisions made
 
 I did not attended any web-design classes, so how this app looks could be better.
