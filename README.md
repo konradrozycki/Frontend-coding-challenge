@@ -6,6 +6,10 @@ A work-in-progress, simple React app.
 
 In the project directory, you can run:
 
+### `npm install`
+
+This command installs a package, and any packages that it depends on.
+
 ### `npm start`
 
 Runs the app in the development mode.<br />
